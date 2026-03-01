@@ -1,7 +1,7 @@
 {
   "student_metadata": {
     "name": "Abhishek",
-    "roll_number": "230137",
+    "roll_number": "m23csai", 
     "course": "Advanced Machine Learning",
     "exam": "Mid-Semester Examination",
     "part": "Part A",
@@ -10,7 +10,7 @@
   "llm_tools_used": [
     {
       "tool_name": "Gemini",
-      "model": "Gemini 3 Flash",
+      "model": "Gemini 3.1 Pro",
       "provider": "Google"
     }
   ],
@@ -19,12 +19,12 @@
       "interaction_id": 1,
       "date": "2026-03-01",
       "tool_name": "Gemini",
-      "model": "Gemini 3 Flash",
-      "purpose": "Paper selection and feasibility check",
-      "prompt": "Find a classical ML paper (SVM, GMM, or Time Series) that is light on math, easy to reproduce on toy data, and CORE A* (2009-2012).",
+      "model": "Gemini 3.1 Pro",
+      "purpose": "Paper selection and conflict resolution for Part A",
+      "prompt": "Find a classical ML paper (SVM, GMM, or Time Series) that is light on math, easy to reproduce on toy data, and CORE A* (2009-2012). Ensure it is not already taken by my batchmates in the live sheet.",
       "llm_response_used": "Yes",
-      "how_it_helped": "Helped identify 'Exact Discovery of Time Series Motifs' as a viable, unclaimed, and interpretable option.",
-      "student_verification": "Verified paper venue (KDD 2009) against CORE A* list and confirmed the method is non-deep learning.",
+      "how_it_helped": "Guided me away from duplicate SVM/GMM papers and helped me select a perfect Time Series paper (Mueen KDD 2009) that satisfies every single Part A rule and is easy to explain.",
+      "student_verification": "I verified the CORE A* venue (KDD 2009), year 2009, methodological Time Series contribution, and CPU-only reproducibility myself by checking the paper PDF and the live response sheet.",
       "confidence_level": 5
     }
   ],
@@ -32,13 +32,13 @@
     {
       "rank": 1,
       "interaction_id": 1,
-      "prompt": "Find a classical ML paper (SVM, GMM, or Time Series) that is light on math, easy to reproduce on toy data, and CORE A* (2009-2012).",
-      "why_important": "This prompt set the constraints for a paper that is maintainable for a proctored exam."
+      "prompt": "Find a classical ML paper (SVM, GMM, or Time Series) that is light on math, easy to reproduce on toy data, and CORE A* (2009-2012). Ensure it is not already taken by my batchmates in the live sheet.",
+      "why_important": "This was the critical prompt that helped me navigate away from taken SVM/GMM papers and led me to the exact Time Series Motif paper that perfectly fits the exam constraints and my need for clear reproducibility."
     }
   ],
   "student_declaration": {
     "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Part A.",
-    "understanding_acknowledged": true,
+    "understanding acknowledged": true,
     "signature": "Abhishek",
     "date": "2026-03-01"
   }
