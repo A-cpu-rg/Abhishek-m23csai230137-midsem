@@ -1,0 +1,45 @@
+{
+  "student_metadata": {
+    "name": "Abhishek",
+    "roll_number": "230137",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part A",
+    "submission_date": "2026-03-01"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Gemini",
+      "model": "Gemini 3 Flash",
+      "provider": "Google"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini 3 Flash",
+      "purpose": "Paper selection and feasibility check",
+      "prompt": "Find a classical ML paper (SVM, GMM, or Time Series) that is light on math, easy to reproduce on toy data, and CORE A* (2009-2012).",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Helped identify 'Exact Discovery of Time Series Motifs' as a viable, unclaimed, and interpretable option.",
+      "student_verification": "Verified paper venue (KDD 2009) against CORE A* list and confirmed the method is non-deep learning.",
+      "confidence_level": 5
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "Find a classical ML paper (SVM, GMM, or Time Series) that is light on math, easy to reproduce on toy data, and CORE A* (2009-2012).",
+      "why_important": "This prompt set the constraints for a paper that is maintainable for a proctored exam."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Part A.",
+    "understanding_acknowledged": true,
+    "signature": "Abhishek",
+    "date": "2026-03-01"
+  }
+}
