@@ -1,0 +1,68 @@
+{
+  "student_metadata": {
+    "name": "Abhishek",
+    "roll_number": "m23csai230137",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "submission_date": "2026-03-11",
+    "task": "Task 1.2"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Gemini",
+      "model": "Gemini 3.1 Pro",
+      "provider": "Google"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-11",
+      "tool_name": "Gemini",
+      "model": "Gemini 3.1 Pro",
+      "task_tag": "Task 1.2",
+      "purpose": "Identifying key assumptions embedded in the MK algorithm",
+      "prompt": "What are the key assumptions that the MK exact motif discovery algorithm depends on? Focus on assumptions specific to this paper, not generic ML assumptions.",
+      "llm_response_used": "Partially",
+      "how_it_helped": "Helped me identify three paper-specific assumptions: Euclidean distance validity, random reference spread, and birthday paradox dependence.",
+      "student_verification": "Traced each assumption back to specific sections: Section 2 (distance), Section 3.2.2 Lines 8-9 (references), Section 4.3.1 (birthday paradox).",
+      "confidence_level": 4,
+      "code_used_verbatim": false
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-11",
+      "tool_name": "Gemini",
+      "model": "Gemini 3.1 Pro",
+      "task_tag": "Task 1.2",
+      "purpose": "Constructing violation scenarios for each assumption",
+      "prompt": "For the assumption that Euclidean distance is valid for motifs, what is a realistic scenario where this would be violated?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested the temporal warping scenario where DTW would be needed, which I used as the violation for Assumption 1.",
+      "student_verification": "Verified by reading Section 4.3.2 of the paper where DTW is discussed.",
+      "confidence_level": 4,
+      "code_used_verbatim": false
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "What are the key assumptions that the MK exact motif discovery algorithm depends on?",
+      "why_important": "This was the foundational prompt that shaped all three assumptions in Task 1.2. It forced me to think beyond generic ML assumptions and find paper-specific ones."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 2,
+      "prompt": "For the assumption that Euclidean distance is valid for motifs, what is a realistic scenario where this would be violated?",
+      "why_important": "The violation scenario for Assumption 1 directly connects to the failure mode in Task 3.2, creating internal consistency across the submission."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for this task.",
+    "understanding_acknowledged": true,
+    "signature": "Abhishek",
+    "date": "2026-03-11"
+  }
+}

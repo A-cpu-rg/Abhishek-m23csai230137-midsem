@@ -1,0 +1,48 @@
+{
+  "student_metadata": {
+    "name": "Abhishek",
+    "roll_number": "m23csai230137",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "submission_date": "2026-03-11",
+    "task": "Task 2.3"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Gemini",
+      "model": "Gemini 3.1 Pro",
+      "provider": "Google"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-11",
+      "tool_name": "Gemini",
+      "model": "Gemini 3.1 Pro",
+      "task_tag": "Task 2.3",
+      "purpose": "Structuring the scalability experiment",
+      "prompt": "How should I structure a scalability experiment to reproduce Figure 6 of the MK paper at toy scale in Python?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested running all three algorithms on subsets of increasing size and plotting execution time vs database size.",
+      "student_verification": "Verified by comparing the suggested approach with Figure 6's structure in the paper.",
+      "confidence_level": 5,
+      "code_used_verbatim": false
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "How should I structure a scalability experiment to reproduce Figure 6 of the MK paper at toy scale in Python?",
+      "why_important": "This shaped the entire Task 2.3 experiment design, ensuring our plot mirrors the paper's Figure 6 structure."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for this task.",
+    "understanding_acknowledged": true,
+    "signature": "Abhishek",
+    "date": "2026-03-11"
+  }
+}

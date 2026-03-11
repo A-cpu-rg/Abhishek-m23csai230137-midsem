@@ -1,0 +1,69 @@
+{
+  "student_metadata": {
+    "name": "Abhishek",
+    "roll_number": "m23csai230137",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "submission_date": "2026-03-11",
+    "task": "Task 2.1"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Gemini",
+      "model": "Gemini 3.1 Pro",
+      "provider": "Google"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-11",
+      "tool_name": "Gemini",
+      "model": "Gemini 3.1 Pro",
+      "task_tag": "Task 2.1",
+      "purpose": "Choosing an appropriate toy dataset for reproduction",
+      "prompt": "What is an appropriate toy dataset for reproducing the MK motif discovery algorithm from KDD 2009? The paper uses random walks and EEG data.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Confirmed that random walk generation via cumulative sum of N(0,1) is the paper's primary benchmark, used in Section 4.1.",
+      "student_verification": "Verified by reading Section 4.1 which describes the exact data generation process.",
+      "confidence_level": 5,
+      "code_used_verbatim": false
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-11",
+      "tool_name": "Gemini",
+      "model": "Gemini 3.1 Pro",
+      "task_tag": "Task 2.1",
+      "purpose": "Dataset generation code",
+      "prompt": "Generate Python code to create a random walk database of m time series of length n, and plant a known motif pair by copying one series with added noise.",
+      "llm_response_used": "Partially",
+      "how_it_helped": "Provided the np.cumsum(np.random.randn(M, N), axis=1) pattern and the planted motif strategy.",
+      "student_verification": "Verified the random walk formula matches Section 4.1 of the paper. The planted motif idea is my own design choice to verify correctness.",
+      "confidence_level": 5,
+      "code_used_verbatim": false,
+      "student_modification": "Modified the planted noise level and index positions to match our database size."
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "What is an appropriate toy dataset for reproducing the MK motif discovery algorithm from KDD 2009?",
+      "why_important": "This confirmed the random walk dataset choice and helped me justify it in terms of the paper's own experiments."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 2,
+      "prompt": "Generate Python code to create a random walk database of m time series of length n, and plant a known motif pair by copying one series with added noise.",
+      "why_important": "Planting a known motif was critical for verifying correctness \u2014 without it, we can't confirm both algorithms find the same true answer."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for this task.",
+    "understanding_acknowledged": true,
+    "signature": "Abhishek",
+    "date": "2026-03-11"
+  }
+}

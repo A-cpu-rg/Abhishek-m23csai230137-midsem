@@ -1,0 +1,48 @@
+{
+  "student_metadata": {
+    "name": "Abhishek",
+    "roll_number": "m23csai230137",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "submission_date": "2026-03-11",
+    "task": "Task 1.1"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Gemini",
+      "model": "Gemini 3.1 Pro",
+      "provider": "Google"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-11",
+      "tool_name": "Gemini",
+      "model": "Gemini 3.1 Pro",
+      "task_tag": "Task 1.1",
+      "purpose": "Understanding the step-by-step flow of the MK algorithm",
+      "prompt": "Explain the MK motif discovery algorithm from Table 3 of the paper step by step, focusing on how the reference points, linear ordering, and offset-based search work together.",
+      "llm_response_used": "Partially",
+      "how_it_helped": "Helped me structure the 7-step breakdown of the algorithm for my notebook explanation.",
+      "student_verification": "Verified each step against Table 3, Lemma 1, and Lemma 2 in Section 3.2.",
+      "confidence_level": 5,
+      "code_used_verbatim": false
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "Explain the MK motif discovery algorithm from Table 3 of the paper step by step, focusing on how the reference points, linear ordering, and offset-based search work together.",
+      "why_important": "This prompt helped me organize the algorithm's flow into a clear step-by-step format suitable for explaining to a classmate, as required by Task 1.1."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for this task.",
+    "understanding_acknowledged": true,
+    "signature": "Abhishek",
+    "date": "2026-03-11"
+  }
+}

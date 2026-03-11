@@ -1,0 +1,48 @@
+{
+  "student_metadata": {
+    "name": "Abhishek",
+    "roll_number": "m23csai230137",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "submission_date": "2026-03-11",
+    "task": "Task 4.1"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Gemini",
+      "model": "Gemini 3.1 Pro",
+      "provider": "Google"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-11",
+      "tool_name": "Gemini",
+      "model": "Gemini 3.1 Pro",
+      "task_tag": "Task 4.1",
+      "purpose": "Structuring the Part B report",
+      "prompt": "Help me write a 4-page report for Part B of my Advanced ML midsem exam, covering: paper summary, reproduction setup and result, ablation findings, failure mode, and honest reflection.",
+      "llm_response_used": "Partially",
+      "how_it_helped": "Provided the overall structure and helped me draft the paper summary and reflection sections.",
+      "student_verification": "All content verified against my actual notebook outputs and experimental results. The reflection section is entirely my own honest assessment of what I could and could not do.",
+      "confidence_level": 4,
+      "code_used_verbatim": false
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "Help me write a 4-page report for Part B of my Advanced ML midsem exam.",
+      "why_important": "This structured the entire report. The LLM helped with phrasing but all technical content was verified against my notebook outputs."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for this task.",
+    "understanding_acknowledged": true,
+    "signature": "Abhishek",
+    "date": "2026-03-11"
+  }
+}

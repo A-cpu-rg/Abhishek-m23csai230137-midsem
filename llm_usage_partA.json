@@ -38,7 +38,7 @@
   ],
   "student_declaration": {
     "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Part A.",
-    "understanding acknowledged": true,
+    "understanding_acknowledged": true,
     "signature": "Abhishek",
     "date": "2026-03-01"
   }

@@ -1,0 +1,69 @@
+{
+  "student_metadata": {
+    "name": "Abhishek",
+    "roll_number": "m23csai230137",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "submission_date": "2026-03-11",
+    "task": "Task 2.2"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Gemini",
+      "model": "Gemini 3.1 Pro",
+      "provider": "Google"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-11",
+      "tool_name": "Gemini",
+      "model": "Gemini 3.1 Pro",
+      "task_tag": "Task 2.2",
+      "purpose": "Implementing the MK algorithm from Table 3",
+      "prompt": "Implement the MK Motif Discovery algorithm from Table 3 of the paper 'Exact Discovery of Time Series Motifs' in Python using numpy. Include brute force (Table 1) and early abandoning baseline. Add detailed comments referencing the paper's pseudocode line numbers.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Provided the initial Python implementation of all three algorithms with line-by-line annotations to the paper's pseudocode.",
+      "student_verification": "Verified each line against Table 1 and Table 3. Checked that Lemma 1 (termination condition) and Lemma 2 (completeness) are correctly implemented by inspect the offset/abandon logic.",
+      "confidence_level": 4,
+      "code_used_verbatim": false,
+      "student_modification": "Restructured the code into separate functions, added distance computation counters, and added pruned_count tracking that the LLM did not include."
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-11",
+      "tool_name": "Gemini",
+      "model": "Gemini 3.1 Pro",
+      "task_tag": "Task 2.2",
+      "purpose": "Debugging the early abandoning implementation",
+      "prompt": "In my early abandoning implementation, should I compare the running sum against best_so_far or best_so_far squared?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Clarified that we should compare squared sums against squared best-so-far to avoid taking square roots at each step, matching Section 2 of the paper.",
+      "student_verification": "Confirmed by re-reading Section 2: 'we work here with the squared Euclidean distance because we can avoid having to take square roots at each of the n steps.'",
+      "confidence_level": 5,
+      "code_used_verbatim": false
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "Implement the MK Motif Discovery algorithm from Table 3 in Python using numpy.",
+      "why_important": "This was the core implementation prompt. The resulting code needed significant verification and modification but provided the structural skeleton for all three algorithms."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 2,
+      "prompt": "In my early abandoning implementation, should I compare the running sum against best_so_far or best_so_far squared?",
+      "why_important": "This caught a subtle but critical implementation detail that would have produced incorrect early abandoning behavior."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for this task.",
+    "understanding_acknowledged": true,
+    "signature": "Abhishek",
+    "date": "2026-03-11"
+  }
+}
